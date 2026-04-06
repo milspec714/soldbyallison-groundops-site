@@ -95,6 +95,17 @@ export default function App() {
     minWidth: "180px",
   };
 
+  const inputStyle = {
+    width: "100%",
+    padding: "14px 16px",
+    borderRadius: "12px",
+    border: "1px solid #cbd5e1",
+    fontSize: "15px",
+    color: "#0f172a",
+    backgroundColor: "#ffffff",
+    boxSizing: "border-box",
+  };
+
   return (
     <div
       style={{
@@ -197,9 +208,14 @@ export default function App() {
               </div>
             </div>
 
-            <a href="#contact" style={lightButton}>
-              Contact Us
-            </a>
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              <a href="#quote" style={darkButton}>
+                Request a Quote
+              </a>
+              <a href="#contact" style={lightButton}>
+                Contact Us
+              </a>
+            </div>
           </div>
 
           <div
@@ -215,6 +231,7 @@ export default function App() {
             <a href="#capabilities" style={navLink}>Capabilities</a>
             <a href="#military" style={navLink}>Military Experience</a>
             <a href="#naics" style={navLink}>NAICS</a>
+            <a href="#quote" style={navLink}>Request a Quote</a>
             <a href="#contact" style={navLink}>Contact</a>
           </div>
         </div>
@@ -282,6 +299,10 @@ export default function App() {
             </p>
 
             <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+              <a href="#quote" style={lightButton}>
+                Request a Quote
+              </a>
+
               <a href="mailto:contracts@groundopsls.com" style={lightButton}>
                 Contact for Opportunities
               </a>
@@ -658,6 +679,10 @@ export default function App() {
           </p>
 
           <div style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
+            <a href="#quote" style={darkButton}>
+              Request a Quote
+            </a>
+
             <a href="mailto:contracts@groundopsls.com" style={darkButton}>
               Contact for Opportunities
             </a>
@@ -670,6 +695,118 @@ export default function App() {
           <p style={{ marginTop: "18px", color: "#64748b", fontSize: "14px" }}>
             Immediate response available for contracting and subcontracting opportunities
           </p>
+        </div>
+      </section>
+
+      {/* REQUEST A QUOTE */}
+      <section id="quote" style={{ padding: "90px 24px", backgroundColor: "#f8fafc" }}>
+        <div
+          style={{
+            maxWidth: "1000px",
+            margin: "0 auto",
+            backgroundColor: "#ffffff",
+            border: "1px solid #e2e8f0",
+            borderRadius: "24px",
+            padding: "40px 28px",
+            boxShadow: "0 18px 44px rgba(15, 23, 42, 0.06)",
+          }}
+        >
+          <h2 style={{ fontSize: "38px", textAlign: "center", marginBottom: "14px" }}>
+            Request a Quote
+          </h2>
+
+          <p
+            style={{
+              textAlign: "center",
+              color: "#475569",
+              maxWidth: "700px",
+              margin: "0 auto 28px",
+              lineHeight: "1.7",
+              fontSize: "17px",
+            }}
+          >
+            Need pricing, sourcing, or procurement support? Send us your request and we’ll respond quickly.
+          </p>
+
+          <form
+            action="https://formsubmit.co/armando@groundopsls.com"
+            method="POST"
+            style={{
+              display: "grid",
+              gap: "16px",
+              maxWidth: "760px",
+              margin: "0 auto",
+            }}
+          >
+            <input type="hidden" name="_subject" value="New Quote Request - Ground Ops Logistics & Services" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://www.groundopsls.com/" />
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+              style={inputStyle}
+            />
+
+            <input
+              type="text"
+              name="agency"
+              placeholder="Agency / Company"
+              required
+              style={inputStyle}
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              style={inputStyle}
+            />
+
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone"
+              style={inputStyle}
+            />
+
+            <select name="timeline" required style={inputStyle}>
+              <option value="">Timeline</option>
+              <option>ASAP</option>
+              <option>30 Days</option>
+              <option>60 Days</option>
+              <option>Planning</option>
+            </select>
+
+            <select name="requestType" required style={inputStyle}>
+              <option value="">Type of Request</option>
+              <option>Public Safety Equipment</option>
+              <option>Office Supplies</option>
+              <option>Janitorial / Facility Supplies</option>
+              <option>Training Aids</option>
+              <option>Logistics Support</option>
+              <option>General Procurement Support</option>
+              <option>Other</option>
+            </select>
+
+            <textarea
+              name="details"
+              placeholder="What do you need? (items, quantities, specs, delivery timing, brands, or any special requirements)"
+              required
+              rows="6"
+              style={inputStyle}
+            />
+
+            <div style={{ textAlign: "center", marginTop: "6px" }}>
+              <button type="submit" style={darkButton}>
+                Submit Request
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
