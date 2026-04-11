@@ -901,16 +901,28 @@ export default function App() {
 
       {/* FOOTER */}
       <footer
-        style={{
-          background: "linear-gradient(90deg, #0b1220 0%, #0f172a 100%)",
-          color: "white",
-          textAlign: "center",
-          padding: "28px 20px",
-          fontSize: "14px",
-        }}
-      >
-        © {new Date().getFullYear()} Ground Ops Logistics & Services LLC. All rights reserved.
-      </footer>
+  style={{
+    background: "linear-gradient(90deg, #0b1220 0%, #0f172a 100%)",
+    color: "white",
+    textAlign: "center",
+    padding: "28px 20px",
+    fontSize: "14px",
+    lineHeight: "1.8",
+  }}
+>
+  © {new Date().getFullYear()} Ground Ops Logistics & Services LLC. All rights reserved.
+  <br />
+  Yorba Linda, CA
+  <br /><br />
+
+  <strong>Business Credentials</strong>
+  <br />
+  UEI: LZCLFH48AWG5 • DUNS: 144817747
+  <br />
+  Small Business (Micro) – CA DGS • Cert #: 2051256 (Exp: 04/30/2028)
+  <br />
+  SDVOSB: In Progress • CAGE Code: Pending
+</footer>
     </div>
   );
 }
