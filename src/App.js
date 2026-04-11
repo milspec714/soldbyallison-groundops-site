@@ -237,129 +237,129 @@ export default function App() {
         </div>
       </div>
 
-      {/* HERO */}
-      <section
+     {/* HERO */}
+<section
+  style={{
+    background: "linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #334155 100%)",
+    color: "white",
+    padding: "110px 24px 95px",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1220px",
+      margin: "0 auto",
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+      gap: "42px",
+      alignItems: "center",
+    }}
+  >
+    <div>
+      <div
         style={{
-          background: "linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #334155 100%)",
-          color: "white",
-          padding: "110px 24px 95px",
+          display: "inline-block",
+          backgroundColor: "rgba(255,255,255,0.1)",
+          border: "1px solid rgba(255,255,255,0.16)",
+          padding: "9px 16px",
+          borderRadius: "999px",
+          fontSize: "13px",
+          fontWeight: "700",
+          letterSpacing: "0.4px",
+          marginBottom: "24px",
         }}
       >
-        <div
+        GOVERNMENT PROCUREMENT • SUBCONTRACT SUPPORT • OPERATIONAL READINESS
+      </div>
+
+      <h1
+        style={{
+          fontSize: "60px",
+          lineHeight: "1.02",
+          margin: "0 0 20px",
+          maxWidth: "760px",
+        }}
+      >
+        Procurement and logistics support for government and prime contractor needs
+      </h1>
+
+      <p
+        style={{
+          fontSize: "19px",
+          lineHeight: "1.8",
+          maxWidth: "720px",
+          color: "rgba(255,255,255,0.9)",
+          marginBottom: "32px",
+        }}
+      >
+        Ground Ops Logistics & Services LLC supports government agencies, prime contractors,
+        and commercial partners with responsive procurement assistance, sourcing support,
+        logistics coordination, and operational follow-through when timing, accountability,
+        and execution matter.
+      </p>
+
+      <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+        <a href="#quote" style={lightButton}>
+          Request a Quote
+        </a>
+
+        <a href="mailto:contracts@groundopsls.com" style={lightButton}>
+          Submit Opportunity
+        </a>
+
+        <a
+          href="/capability-statement.pdf"
+          download
           style={{
-            maxWidth: "1220px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "42px",
-            alignItems: "center",
+            ...darkButton,
+            backgroundColor: "transparent",
+            border: "1px solid rgba(255,255,255,0.35)",
+            color: "white",
+            boxShadow: "none",
           }}
         >
-          <div>
-            <div
-              style={{
-                display: "inline-block",
-                backgroundColor: "rgba(255,255,255,0.1)",
-                border: "1px solid rgba(255,255,255,0.16)",
-                padding: "9px 16px",
-                borderRadius: "999px",
-                fontSize: "13px",
-                fontWeight: "700",
-                letterSpacing: "0.4px",
-                marginBottom: "24px",
-              }}
-            >
-              LOGISTICS • PROCUREMENT • OPERATIONAL SUPPORT
-            </div>
+          Download Capability Statement
+        </a>
+      </div>
+    </div>
 
-            <h1
-              style={{
-                fontSize: "60px",
-                lineHeight: "1.02",
-                margin: "0 0 20px",
-                maxWidth: "760px",
-              }}
-            >
-              Reliable support for mission-ready operations
-            </h1>
+    <div
+      style={{
+        backgroundColor: "rgba(255,255,255,0.08)",
+        border: "1px solid rgba(255,255,255,0.14)",
+        borderRadius: "28px",
+        padding: "36px",
+        boxShadow: "0 24px 55px rgba(0,0,0,0.2)",
+      }}
+    >
+      <h2 style={{ marginTop: 0, fontSize: "30px", marginBottom: "20px" }}>
+        Why Ground Ops
+      </h2>
 
-            <p
-              style={{
-                fontSize: "19px",
-                lineHeight: "1.8",
-                maxWidth: "720px",
-                color: "rgba(255,255,255,0.9)",
-                marginBottom: "32px",
-              }}
-            >
-              Ground Ops Logistics & Services LLC delivers dependable logistics,
-              procurement assistance, administrative support, and field operations
-              coordination for government and commercial partners who need
-              disciplined execution, responsiveness, and professional follow-through.
-            </p>
-
-            <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-              <a href="#quote" style={lightButton}>
-                Request a Quote
-              </a>
-
-              <a href="mailto:contracts@groundopsls.com" style={lightButton}>
-                Contact for Opportunities
-              </a>
-
-              <a
-                href="/capability-statement.pdf"
-                download
-                style={{
-                  ...darkButton,
-                  backgroundColor: "transparent",
-                  border: "1px solid rgba(255,255,255,0.35)",
-                  color: "white",
-                  boxShadow: "none",
-                }}
-              >
-                Download Capability Statement
-              </a>
-            </div>
-          </div>
-
+      <div style={{ display: "grid", gap: "14px" }}>
+        {[
+          "Veteran-led, disciplined, mission-focused execution",
+          "Support for agency purchasing and subcontract opportunities",
+          "Responsive communication and dependable follow-through",
+          "Flexible sourcing, coordination, and operational support",
+        ].map((item, i) => (
           <div
+            key={i}
             style={{
               backgroundColor: "rgba(255,255,255,0.08)",
-              border: "1px solid rgba(255,255,255,0.14)",
-              borderRadius: "28px",
-              padding: "36px",
-              boxShadow: "0 24px 55px rgba(0,0,0,0.2)",
+              border: "1px solid rgba(255,255,255,0.08)",
+              borderRadius: "16px",
+              padding: "15px 16px",
+              lineHeight: "1.6",
             }}
           >
-            <h2 style={{ marginTop: 0, fontSize: "30px", marginBottom: "20px" }}>
-              Why Ground Ops
-            </h2>
-
-            <div style={{ display: "grid", gap: "14px" }}>
-              {[
-                "Responsive communication and dependable follow-through",
-                "Support for government, commercial, and subcontract opportunities",
-                "Organized execution in fast-moving environments",
-                "Professional, disciplined, mission-focused approach",
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.08)",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    borderRadius: "16px",
-                    padding: "15px 16px",
-                    lineHeight: "1.6",
-                  }}
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
+            {item}
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* PREMIUM STRIP UNDER HERO */}
       <section
