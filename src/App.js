@@ -387,17 +387,38 @@ export default function App() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" style={{ padding: "70px 24px 90px", backgroundColor: "#ffffff" }}>
-        <div style={{ maxWidth: "980px", margin: "0 auto", textAlign: "center" }}>
-          <h2 style={sectionTitle}>About Ground Ops</h2>
-          <p style={sectionText}>
-            Ground Ops Logistics & Services LLC provides organized, reliable, and
-            professional support across logistics, procurement coordination,
-            field operations, and administrative functions. Our approach is rooted
-            in discipline, accountability, and execution under pressure.
-          </p>
-        </div>
-      </section>
+<section id="about" style={{ padding: "70px 24px 90px", backgroundColor: "#ffffff" }}>
+  <div style={{ maxWidth: "980px", margin: "0 auto", textAlign: "center" }}>
+    <h2 style={sectionTitle}>About Ground Ops</h2>
+
+    <p style={sectionText}>
+      Ground Ops Logistics & Services LLC is a veteran-led company built on discipline,
+      accountability, and mission-focused execution. With over 20 years of military
+      experience in logistics, ammunition operations, and field support, we understand
+      the importance of reliability, organization, and follow-through in high-demand environments.
+      <br /><br />
+      We support government agencies, contractors, and commercial partners with procurement
+      assistance, logistics coordination, and operational support—delivering responsive
+      communication and dependable execution when timing and accuracy matter most.
+    </p>
+
+    {/* CREDENTIAL STRIP */}
+    <div
+      style={{
+        marginTop: "30px",
+        display: "flex",
+        justifyContent: "center",
+        gap: "14px",
+        flexWrap: "wrap",
+      }}
+    >
+      <div style={premiumStripBox}>UEI: LZCLFH48AWG5</div>
+      <div style={premiumStripBox}>DUNS: 144817747</div>
+      <div style={premiumStripBox}>CA Small Business (Micro)</div>
+      <div style={premiumStripBox}>SDVOSB: In Progress</div>
+    </div>
+  </div>
+</section>
 
       {/* SERVICES */}
       <section id="services" style={{ padding: "90px 24px", backgroundColor: "#f8fafc" }}>
