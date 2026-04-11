@@ -414,7 +414,10 @@ export default function App() {
     >
       <div style={premiumStripBox}>UEI: LZCLFH48AWG5</div>
       <div style={premiumStripBox}>DUNS: 144817747</div>
-      <div style={premiumStripBox}>CA Small Business (Micro)</div>
+      <div style={premiumStripBox}>
+  CA Small Business (Micro)<br />
+  Cert #2051256
+</div>
       <div style={premiumStripBox}>SDVOSB: In Progress</div>
     </div>
   </div>
