@@ -412,10 +412,14 @@ export default function App() {
         flexWrap: "wrap",
       }}
     >
-      <div style={premiumStripBox}>UEI: LZCLFH48AWG5</div>
-      <div style={premiumStripBox}>DUNS: 144817747</div>
-      <div style={premiumStripBox}>CA Small Business (Micro): 2051256</div>
-      <div style={premiumStripBox}>SDVOSB: In Progress</div>
+<div style={premiumStripBox}>UEI: LZCLFH48AWG5</div>
+<div style={premiumStripBox}>CAGE: 1MG17</div>
+<div style={premiumStripBox}>DUNS: 144817747</div>
+<div style={premiumStripBox}>
+  CA Small Business (Micro)<br />
+  Cert #2051256
+</div>
+<div style={premiumStripBox}>SDVOSB: In Progress</div>
     </div>
   </div>
 </section>
@@ -938,11 +942,11 @@ export default function App() {
 
   <strong>Business Credentials</strong>
   <br />
-  UEI: LZCLFH48AWG5 • DUNS: 144817747
-  <br />
-  Small Business (Micro) – CA DGS • Cert #: 2051256 (Exp: 04/30/2028)
-  <br />
-  SDVOSB: In Progress • CAGE Code: Pending
+  UEI: LZCLFH48AWG5 • CAGE: 1MG17 • DUNS: 144817747
+<br />
+Small Business (Micro) – CA DGS • Cert #: 2051256 (Exp: 04/30/2028)
+<br />
+SDVOSB: In Progress
 </footer>
     </div>
   );
